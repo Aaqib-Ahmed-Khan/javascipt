@@ -1,0 +1,32 @@
+
+body {
+  background-color: #b195f8; 
+}
+.box {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid rgb(43, 53, 190);
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto; 
+
+.info_box {
+  flex-grow: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border: 6px solid rgb(27, 70, 0); 
+  margin-top: 20px;
+  padding: 10px;
+}
