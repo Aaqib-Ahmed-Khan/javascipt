@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-image: url('photo-1523961131990-5ea7c61b2107.avif'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+.user{
+    color: #52eee4;
+    font-size: xx-large;
+    
+}
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #d2d0a3;
+}
+/* Container for the project cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Styling for each project card */
+.project {
+    background-color: #030306;
+    border: 1px solid #0f0707;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Three cards per row with some margin */
+    box-shadow: 0 4px 8px rgba(247, 248, 239, 0.725);
+    transition: transform 0.3s;
+    animation: hype 4s ease infinite;
+    font-family: "Kode Mono", monospace;
+    
+}
+@keyframes hype{
+    100% {
+        box-shadow: 4px 7px 6px 3px rgb(162, 0, 255);
+    }
+    100% {
+        box-shadow: 6px 3px 7px 2px rgb(178, 196, 18);
+    }
+}
+/* Hover effect for project cards */
+.project:hover {
+    transform: translateY(-10px);
+}
+/* Styling for links inside the project cards */
+.project a {
+    text-decoration: none;
+    color: #cfcaad;
+    font-size: 18px;
+    font-weight: bold;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 40px); /* Two cards per row */
+    }
+}
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .project {
+        width: calc(100% - 40px); /* One card per row */
+    }
+}
+/* Container for the heading */
+.container1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+   
+}
+/* Styling for the heading box */
+.heading {
+     /* background: linear-gradient(65deg, rgb(26, 19, 24), rgb(13, 15, 14), rgb(8, 8, 7)); */
+    background-color: #030306;
+    border: 1px solid #0f0707;
+    border-radius: 8px;
+    padding: 20px;
+    color: rgb(188, 230, 220);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 136, 0, 0.867);
+    /* animation: glow 1.5s infinite alternate; */
+    animation: glow 4s ease infinite;
+    font-family: "Kode Mono", monospace;
+}
+
+@keyframes glow{
+    100% {
+        box-shadow: 4px 7px 10px 3px rgb(0, 208, 255);
+    }
+    100% {
+        box-shadow: 6px 3px 20px 2px rgb(10, 190, 255);
+    }
+}
+
